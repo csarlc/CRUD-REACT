@@ -1,0 +1,29 @@
+html{
+    padding: 1%;
+    
+}
+button{
+    margin-right: 10px;
+    margin-top: 2%;
+}
+
+.navbar-item-right {
+    margin-right: auto;
+  }
+/*table{
+    background: linear-gradient(to right, #82AAE3 0%, #91D8E4 50%
+    , #82AAE3 100%);
+}
+td{
+    font-family: 'Times New Roman', Times, serif;
+}
+th{
+    font-family: 'Cascadia Code';
+}*/
+
+h1{
+    font-family: 'Segoe UI Black';
+}
+Button{
+    margin-right: 10px;
+}
