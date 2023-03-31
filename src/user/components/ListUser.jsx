@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { DeleteUSer, listUser } from "../api/ApiUser";
 import { User } from "../models/ModelUser";
 import { UpdateUser } from "./UpdateUser";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import Swal from "sweetalert2";
 
 export const ListUser = () => {
@@ -77,7 +80,7 @@ export const ListUser = () => {
                       className="btn btn-warning"
                       onClick={() => handleOpenModal(u)}
                     >
-                      Editar
+                      <EditIcon></EditIcon>
                     </button>
                     <button
                       className="btn btn-danger"
@@ -85,7 +88,7 @@ export const ListUser = () => {
                         eliminar(u._id);
                       }}
                     >
-                      Eliminar
+                      <DeleteIcon />
                     </button>
                     <button
                       className="btn btn-success"
@@ -93,7 +96,7 @@ export const ListUser = () => {
                         profile(u);
                       }}
                     >
-                      Ver
+                      <VisibilityIcon></VisibilityIcon>
                     </button>
                   </td>
                 </tr>

@@ -2,7 +2,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { isUserAuthenticated } from "./login/Helpers/LoginHelper";
-
+import LogoutIcon from "@mui/icons-material/Logout";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 export const NavBar = () => {
   const cerrarSesion = () => {
     localStorage.removeItem("token");
@@ -38,7 +39,7 @@ export const NavBar = () => {
                     className="nav-link active"
                     aria-current="page"
                   >
-                    Agregar Usuario
+                    <PersonAddAltIcon fontSize="large"></PersonAddAltIcon>
                   </Link>
                 </li>
               </ul>
@@ -51,7 +52,7 @@ export const NavBar = () => {
                       onClick={() => cerrarSesion()}
                     >
                       {/*/<FontAwesomeIcon icon="fa-solid fa-right-from-bracket" />*/}
-                      Logout
+                      <LogoutIcon fontSize="large"></LogoutIcon>
                     </Link>
                   </li>
                 )}
