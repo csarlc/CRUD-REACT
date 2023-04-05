@@ -17,7 +17,6 @@ export const FormUser = ({ userProp, titleButton, option }) => {
   const crud = async () => {
     await sendData(user, option);
   };
-
   return (
     <form onSubmit={handleSubmit(crud)}>
       <div className="form-group">
